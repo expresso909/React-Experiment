@@ -1,0 +1,115 @@
+/* Main Template */
+.Template {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #ffffff;
+  --border: #e5e4e7;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+            rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  font: 16px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: #f4f6f8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card */
+.job-card {
+  width: 340px;
+  background: var(--bg);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Company Logo */
+.job-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  object-fit: cover;
+  background: #eee;
+  border:#08060d 
+  
+}
+
+/* Title */
+.job-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+/* Company Name */
+.job-company {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Tags */
+.job-tags {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+/* Description */
+.job-desc {
+  font-size: 13px;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Footer */
+.job-skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Salary */
+.salary {
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+
+.Apply Now {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}

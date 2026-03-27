@@ -1,0 +1,135 @@
+.Template {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #d1eef0;
+  display:flex;
+  align-items:center;
+  gap: 30px;
+}
+
+/* Card */
+.job-card {
+  position:relative;
+  width: 400px;
+  background: #282e50;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  flex: 1;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Header */
+.job-header {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#dbd9d9
+}
+
+/* Logo */
+.job-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+.bookmark-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.bookmark-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Company */
+.job-company {
+  padding:12px;
+  font-size: 18px;
+  color: #e4d4d4;
+  margin-top: 10px;
+}
+
+/* Title */
+.job-title h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Tags */
+.job-tags {
+
+  margin: 20px ;
+  font-size: 15px;
+  color: #fffdfd;
+}
+
+/* Description */
+.job-desc {
+  font-size: 18px;
+  color: #e9dfdf;
+  margin: 10px 0;
+}
+
+/* Skills */
+.job-skills {
+  font-size: 10px;
+  color: #fdfafa;
+  margin-top: 10px;
+}
+
+/* Salary */
+.salary {
+  font-size: 23px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Button */
+.apply-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none; 
+  border-radius: 10px;
+  background: linear-gradient(135deg, #aa3bff, #6c63ff);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
+
+
